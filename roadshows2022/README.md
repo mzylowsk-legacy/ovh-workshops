@@ -8,7 +8,7 @@
 #### 2. Pierwsza instancja
 - Wygenerowanie klucza SSH
 ```
-ssh-keygen -f demo
+ssh-keygen -t ecdsa -f demo
 ```
 - Uruchomienie pierwszej instancji (D2-2, publiczne IP)
 - Instalacja dokera za pomocą cloud-init'a:
@@ -33,7 +33,7 @@ sudo docker run -d -p 80:80 --name www-server httpd && sudo docker exec www-serv
 ```
 lsblk
 ```
-- Dla nowych wolumenów konieczne jest utworzenie systemu plików:
+- Dla **nowych** wolumenów konieczne jest utworzenie systemu plików:
 ```
 sudo mkfs.ext4 /dev/sdX
 ```
