@@ -95,6 +95,7 @@ openstack server unlock [VM_ID]
 - Połączenie się z klastrem:
     - Skopiowanie pliku kubeconfig pobranego z panelu OVH:
     ```scp -i key kubeconfig.yml ubuntu@[PUBLIC_IP]:~/ ```
+    
     ```export KUBECONFIG=kubeconfig.yml```
 - Wylistowanie węzłów klastra:
     ```kubectl get nodes```
